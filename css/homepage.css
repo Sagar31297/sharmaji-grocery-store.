@@ -1,0 +1,318 @@
+*{
+    font-family: 'Koulen', cursive;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eee;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e84118;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.navbar-brand{
+    color: black;
+    cursor: pointer;
+}
+.navbar a:hover{
+    color: black;
+}
+.navbar-nav a{
+    color: black;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    margin: 5px;
+    transition: .4s linear;
+}
+.navbar-nav a:active{
+    color: white;
+    background-color: red;
+}
+.navbar-brand i{
+    color: green;
+    font-size: 2rem;
+}
+.navbar-nav a:hover{
+    color: white;
+    background-color: green;
+}
+.icons div{
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #eee;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px;
+    transition: .4s linear;
+}
+.icons .fas:hover{
+    background-color: green;
+    color: white;
+}
+#menu{
+    display: none;
+}
+.search-form{
+    position: absolute;
+    top: -115%; right: 0%;
+    width: 20rem;
+    height: 2.5rem;
+    background: white;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,.1);
+    transition: .4s linear;
+}
+.search-form.active{
+    top: 115%;
+    transition: .4s linear;
+}
+.search-form .fas{
+    height: 2.6rem;
+    width: 3.2rem;
+    line-height: 2.2rem;
+    font-size: 1.5rem;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin: -5px;
+}
+input{
+    height: 100%;
+    width: 85%;
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+}
+.login-form{
+    position: absolute;
+    top: -500%; right: 0%;
+    background: white;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    width: 20rem;
+    padding: 2rem;
+    transition: .4s linear;
+}
+.login-form.active{
+    top: 105%;
+    transition: .4s linear;
+}
+.login-form h5{
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.box{
+    margin: 2px 0;
+    border: 2px solid rgba(0,0,0,.1);
+    padding: 5px;
+    font-size: 1rem;
+    color: black;
+    text-transform: none;
+    width: 100%;
+}
+label{
+    font-size: 1.5rem;
+    color:#666;
+    cursor: pointer;
+}
+.login-form p{
+    color: #666;
+    padding-top: .7rem;
+    font-size: 1rem;
+}
+.shopping-cart{
+    position: absolute;
+    top: -1000%;right: 0%;
+    background: white;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    width: 20rem;
+    padding: 10px;
+    transition: .4s linear;
+}
+.shopping-cart.active{
+    top: 100%;
+    transition: .4s linear;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5px;
+    position: relative;
+}
+.fa-trash-alt{
+    position: absolute;
+    top: 20%; right: 0%;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+}
+.fa-trash-alt:hover{
+    color: orange;
+}
+h5{
+    color: black;
+    font-size: 13px;
+    padding-bottom: 3px;
+}
+.total{
+    text-align: center;
+}
+.card{
+    transition: .4s linear;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+#last a{
+    color: #666;
+    background: none;
+    border-radius: 0rem;
+    transition: .4s linear;
+}
+#last{
+    background-color: #eee;
+}
+#last a:hover{
+    transform: translateX(20px);
+}
+#last .btn{
+    margin-top: 2px;
+}
+#sub-icons i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #e84118;
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .shopping-cart{
+        width: 22rem;
+        padding: 5px;
+        transition: .4s linear;
+    }
+    .item{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        margin-bottom: 2px;
+        position: relative;
+    }
+    .fa-trash-alt{
+        position: absolute;
+        top: 20%; right: 0%;
+        font-size: 1.2rem;
+        color: #666;
+        cursor: pointer;
+    }
+    .fa-trash-alt:hover{
+        color: orange;
+    }
+    .shopping-cart h5{
+        font-size: 11px;
+        padding-bottom: 1px;
+    }
+    .shopping-cart span{
+        font-size: 9px;
+        padding-bottom: 1px;
+    }
+    .total{
+        text-align: center;
+    }
+}
+@media(max-width:768px){
+    nav{
+        padding: 2rem;
+    }
+    #menu{
+        display: inline-block;
+    }
+    .box{
+        margin: .2rem 0;
+        padding: 3px;
+        font-size: .5rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    .shopping-cart img{
+        width: 80px;
+    }
+    p{
+        padding-top: .5rem;
+        font-size: .8rem;
+    }
+    .navbar-nav{
+        position: absolute;
+        top: 90%;
+        left: 0; right: 0;
+        background: white;
+        border-top: 6px solid rgba(0,0,0,.1);
+        border-bottom: 6px solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+        transition: .4s linear;
+    }
+    .active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+        transition: .4s linear;
+    }
+    .navbar-nav a{
+        margin: 0px;
+        border-bottom: 2px solid rgba(0,0,0,.1);
+        padding: .4rem;
+        background-color: #e84118;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        display: block;
+        border-radius: .5rem;
+    }
+}
+
+@media(max-width:480px){
+    html{
+        font-size: 55%;
+    }footer{
+        font-size: 15px;
+    }
+    .shopping-cart img{
+        width: 50px;
+    }
+    .total{
+        margin-top: 5px;
+    }
+    .search-form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    input{
+        width: 100%;
+        padding: 0 1.5rem;
+        font-size: 1.3rem;
+    }
+}
